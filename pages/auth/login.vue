@@ -79,6 +79,14 @@ export default {
   .login__input
     min-width: 350px
     box-shadow: 0px 3px 5px #00000007
+    @apply py-2 px-3 rounded-md appearance-none
+    &:focus
+      @apply outline-none shadow-outline
     @media (max-width: $xl)
       @apply min-w-full
+
+  .button
+    @apply py-2 px-3 rounded-md font-medium cursor-pointer
+    &:focus
+      @apply outline-none shadow-outline
 </style>
