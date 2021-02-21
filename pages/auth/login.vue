@@ -51,38 +51,34 @@
     </div>
   </div>
 </template>
-
-<style lang="postcss" scoped>
-.login {
-      -webkit-font-smoothing: antialiased;
-    @apply overflow-x-hidden py-3 px-8 text-sm text-gray-800;
-    @media (max-width: 639px) {
-        @apply px-3;
-    }
-    @apply relative bg-white;
-    @media (max-width: 1279px) {
-        background: linear-gradient(to bottom, #1C3FAA, #2B51B4);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    &:before {
-        content: "";
-        margin-left: -48%;
-        background-image: url('~assets/images/bg-login-page.svg');
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position: right;
-        @apply w-full h-full absolute top-0 left-0;
-        @media (max-width: 1279px) {
-            @apply hidden;
-        }
-    }
-    & .login__input {
-        min-width: 350px;
-        box-shadow: 0px 3px 5px #00000007;
-        @media (max-width: 1279px) {
-            @apply min-w-full;
-        }
-    }
+<script>
+export default {
+  'layouts' : 'intro',
 }
+</script>
+
+<style lang="sass" scoped>
+.login
+  @apply relative bg-white
+  @media (max-width: $xl)
+    background: linear-gradient(to bottom, #1C3FAA, #2B51B4)
+    background-repeat: no-repeat
+    background-attachment: fixed
+
+  &:before
+    content: ""
+    margin-left: -48%
+    background-image: url('~assets/images/bg-login-page.svg')
+    background-repeat: no-repeat
+    background-size: auto 100%
+    background-position: right
+    @apply w-full h-full absolute top-0 left-0
+    @media (max-width: $xl)
+      @apply hidden
+
+  .login__input
+    min-width: 350px
+    box-shadow: 0px 3px 5px #00000007
+    @media (max-width: $xl)
+      @apply min-w-full
 </style>

@@ -47,7 +47,7 @@ export default {
   //Style resources https://www.npmjs.com/package/@nuxtjs/style-resources
   styleResources: {
     // your settings here
-    sass: ['~assets/sass/*.sass'],
+    sass: ['~assets/sass/global.sass', '~assets/sass/components/*.sass'],
     scss: [],
     less: [],
     stylus: []
