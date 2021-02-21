@@ -59,11 +59,13 @@ export default {
 
 <style lang="sass" scoped>
 .login
-  @apply relative bg-white
+  @apply relative bg-white py-3 px-8
   @media (max-width: $xl)
     background: linear-gradient(to bottom, #1C3FAA, #2B51B4)
     background-repeat: no-repeat
     background-attachment: fixed
+  @media (max-width: $sm)
+    @apply px-3
 
   &:before
     content: ""

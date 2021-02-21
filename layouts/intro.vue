@@ -4,6 +4,13 @@
   </div>
 </template>
 <style lang="sass">
+html
+  background: #1C3FAA
+
+body
+  -webkit-font-smoothing: antialiased
+  @apply overflow-x-hidden font-roboto text-sm text-gray-800
+
 *
   @for $i from 1 through 50
     > .intro-x:nth-child(#{$i})
