@@ -35,10 +35,23 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  tailwindcss: {
+    exposeConfig: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
   ],
+
+  //Style resources https://www.npmjs.com/package/@nuxtjs/style-resources
+  styleResources: {
+    // your settings here
+    sass: ['~assets/sass/*.sass'],
+    scss: [],
+    less: [],
+    stylus: []
+   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
