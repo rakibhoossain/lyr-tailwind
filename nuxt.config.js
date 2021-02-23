@@ -1,3 +1,4 @@
+const BASE_URL = 'http://localhost/lyr-backend/public';
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -42,6 +43,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
 
   //Style resources https://www.npmjs.com/package/@nuxtjs/style-resources
@@ -56,5 +59,27 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
 
-  }
+  },
+
+  //Axios
+  axios:{
+    // baseURL: BASE_URL+'/api',
+  },
+
+  // Auth
+  auth: {
+    strategies: {
+        laravelJWT: {
+            provider: 'laravel/jwt',
+            url: BASE_URL,
+            token: {
+              property: 'access_token',
+              maxAge: 60 * 60
+            },
+            refreshToken: {
+              maxAge: 20160 * 60
+            },
+        },
+    }
+  },
 }

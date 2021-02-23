@@ -3,55 +3,55 @@
     <Nuxt />
   </div>
 </template>
-<style lang="sass">
-html
-  background: #1C3FAA
+<style lang="scss">
+* {
+    @for $i from 1 through 50 {
+        > .intro-x:nth-child(#{$i}) {
+            z-index: #{50 - $i};
+            @apply opacity-0 relative;
+            transform: translateX(50px);
+            animation: 0.4s intro-x-animation ease-in-out .33333s;
+            animation-fill-mode: forwards;
+            animation-delay: #{$i * 0.1}s;
+        }
+        > .-intro-x:nth-child(#{$i}) {
+            z-index: #{50 - $i};
+            @apply opacity-0 relative;
+            transform: translateX(-50px);
+            animation: 0.4s intro-x-animation ease-in-out .33333s;
+            animation-fill-mode: forwards;
+            animation-delay: #{$i * 0.1}s;
+        }
+        > .intro-y:nth-child(#{$i}) {
+            z-index: #{50 - $i};
+            @apply opacity-0 relative;
+            transform: translateY(50px);
+            animation: 0.4s intro-y-animation ease-in-out .33333s;
+            animation-fill-mode: forwards;
+            animation-delay: #{$i * 0.1}s;
+        }
+        > .-intro-y:nth-child(#{$i}) {
+            z-index: #{50 - $i};
+            @apply opacity-0 relative;
+            transform: translateY(-50px);
+            animation: 0.4s intro-y-animation ease-in-out .33333s;
+            animation-fill-mode: forwards;
+            animation-delay: #{$i * 0.1}s;
+        }
+    }
+}
 
-body
-  -webkit-font-smoothing: antialiased
-  @apply overflow-x-hidden font-roboto text-sm text-gray-800
-
-*
-  @for $i from 1 through 50
-    > .intro-x:nth-child(#{$i})
-      z-index: #{50 - $i}
-      @apply opacity-0 relative
-      transform: translateX(50px)
-      animation: 0.4s intro-x-animation ease-in-out .33333s
-      animation-fill-mode: forwards
-      animation-delay: #{$i * 0.1}s
-
-    > .-intro-x:nth-child(#{$i})
-      z-index: #{50 - $i}
-      @apply opacity-0 relative
-      transform: translateX(-50px)
-      animation: 0.4s intro-x-animation ease-in-out .33333s
-      animation-fill-mode: forwards
-      animation-delay: #{$i * 0.1}s
-
-    > .intro-y:nth-child(#{$i})
-      z-index: #{50 - $i}
-      @apply opacity-0 relative
-      transform: translateY(50px)
-      animation: 0.4s intro-y-animation ease-in-out .33333s
-      animation-fill-mode: forwards
-      animation-delay: #{$i * 0.1}s
-
-    > .-intro-y:nth-child(#{$i})
-      z-index: #{50 - $i}
-      @apply opacity-0 relative
-      transform: translateY(-50px)
-      animation: 0.4s intro-y-animation ease-in-out .33333s
-      animation-fill-mode: forwards
-      animation-delay: #{$i * 0.1}s
-
-@keyframes intro-x-animation
-  100%
-    @apply opacity-100
-    transform: translateX(0px)
-
-@keyframes intro-y-animation
-  100%
-    @apply opacity-100
-    transform: translateY(0px)
+@keyframes intro-x-animation {
+    100% {
+        @apply opacity-100;
+        transform: translateX(0px);
+    }
+}
+@keyframes intro-y-animation {
+    100% {
+        @apply opacity-100;
+        transform: translateY(0px);
+    }
+}
 </style>
+
