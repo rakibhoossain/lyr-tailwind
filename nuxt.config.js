@@ -21,7 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~assets/css/roboto.css',
+    // '~assets/css/roboto.css',
+    '~assets/sass/app.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -50,7 +51,7 @@ export default {
   //Style resources https://www.npmjs.com/package/@nuxtjs/style-resources
   styleResources: {
     // your settings here
-    sass: ['~assets/sass/global.sass'],
+    sass: [], //'~assets/sass/global.sass'
     scss: [],
     less: [],
     stylus: []

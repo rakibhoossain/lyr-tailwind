@@ -135,39 +135,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-.login
-  @apply relative bg-white
-  @media (max-width: $xl)
-    background: linear-gradient(to bottom, #1C3FAA, #2B51B4)
-    background-repeat: no-repeat
-    background-attachment: fixed
-  @media (max-width: $sm)
-    @apply px-3
-
-  &:before
-    content: ""
-    margin-left: -48%
-    background-image: url('~assets/images/bg-login-page.svg')
-    background-repeat: no-repeat
-    background-size: auto 100%
-    background-position: right
-    @apply w-full h-full absolute top-0 left-0
-    @media (max-width: $xl)
-      @apply hidden
-
-  .login__input
-    min-width: 350px
-    box-shadow: 0px 3px 5px #00000007
-    @apply py-2 px-3 rounded-md appearance-none
-    &:focus
-      @apply outline-none shadow-outline
-    @media (max-width: $xl)
-      @apply min-w-full
-
-  .button
-    @apply py-2 px-3 rounded-md font-medium cursor-pointer
-    &:focus
-      @apply outline-none shadow-outline
-</style>

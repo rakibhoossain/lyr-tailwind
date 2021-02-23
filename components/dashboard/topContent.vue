@@ -152,7 +152,7 @@
                   </div>
                   <div class="cursor-pointer relative flex items-center mt-5">
                       <div class="w-12 h-12 flex-none image-fit mr-1">
-                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-2.jpg">
+                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/profile-2.jpg">
                           <div class="w-3 h-3 bg-theme-9 absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                       </div>
                       <div class="ml-2 overflow-hidden">
@@ -170,7 +170,7 @@
       <!-- BEGIN: Account Menu -->
       <div class="intro-x dropdown w-8 h-8 relative">
           <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
-              <img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-1.jpg">
+              <img alt="Midone Tailwind HTML Admin Template" src="~/assets/images/profile-1.jpg">
           </div>
           <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
               <div class="dropdown-box__content box bg-theme-38 text-white">
@@ -199,41 +199,3 @@ export default {
   name: "top-content",
 }
 </script>
-<style lang="sass" scoped>
-.top-bar
-  height: 67px
-  z-index: 51
-  @apply flex items-center relative border-b border-theme-5
-
-//Search
-.search
-  @apply relative
-  .search__input
-    @apply w-56 rounded-full bg-theme-8 pr-8
-  .search__icon
-    @apply w-5 h-5 absolute my-auto inset-y-0 mr-3 right-0 text-theme-7
-
-//Notification content
-.notification-content
-  width: 350px
-  @media (max-width: $sm)
-    width: 280px
-  .notification-content__title
-    @apply font-medium mb-5
-  .notification-content__box
-    @apply p-5
-
-//Notification
-.notification
-  @apply relative text-theme-7
-  &.notification--light
-    @apply text-theme-27
-  .notification__icon
-    @apply w-5 h-5
-  &.notification--bullet:before
-    content: ""
-    width: 8px
-    height: 8px
-    margin-top: -2px
-    @apply rounded-full absolute right-0 bg-theme-6
-</style>
