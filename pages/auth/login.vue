@@ -54,7 +54,6 @@
 </template>
 <script>
 export default {
-  layouts : 'intro',
   middleware: 'guest',
   data() {
     return {
