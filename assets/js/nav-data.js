@@ -8,7 +8,7 @@ const navData =
   },
   {
     'icon': 'box',
-    'page_name': 'menu-layout',
+    'page_name': '#',
     'title': 'Menu Layout',
     'children': [
       {
@@ -63,7 +63,7 @@ const navData =
   },
   {
     'icon': 'edit',
-    'page_name': 'crud',
+    'page_name': '#',
     'title': 'Crud',
     'children': [
       {
