@@ -1,7 +1,7 @@
 <template>
   <li>
     <nuxt-link :to="node.page_name" class="side-menu">
-      <div class="side-menu__icon"> <i :data-feather="node.icon"></i> </div>
+      <div class="side-menu__icon"> <vue-feather v-if="node.icon" :type="node.icon"></vue-feather> </div>
       <div class="side-menu__title">{{node.title}}</div>
     </nuxt-link>
     <ul v-if="node.children && node.children.length">
