@@ -8,7 +8,7 @@
     <ul v-if="navData">
       <menu-item v-for="(item, i) in navData" :key="i" :node="item"></menu-item>
     </ul>
-</nav>
+  </nav>
 </template>
 <script>
 import navData from '../../assets/js/nav-data'

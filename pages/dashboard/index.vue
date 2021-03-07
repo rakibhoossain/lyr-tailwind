@@ -5,7 +5,7 @@
         <!-- END: Side Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
-
+          <top-content/>
           <!-- <top-content/> -->
         </div>
         <!-- END: Content -->

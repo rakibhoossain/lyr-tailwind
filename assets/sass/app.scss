@@ -22,7 +22,7 @@
 @import 'intro';
 
 // Components
-// @import 'top-bar';
+@import 'top-bar';
 @import 'app-style';
 @import 'login';
 // @import 'mini-chat-box';
@@ -32,23 +32,23 @@
 // @import 'table-report';
 // @import 'report-timeline';
 // @import 'report-chart';
-// @import 'search';
+@import 'search';
 @import 'input';
 @import 'button';
-// @import 'notification';
-// @import 'image-fit';
-// @import 'box';
+@import 'notification';
+@import 'image-fit';
+@import 'box';
 // @import 'report-box';
 @import 'global';
 @import 'content';
 // @import 'top-nav';
 @import 'side-nav';
-// @import 'breadcrumb';
+@import 'breadcrumb';
 @import 'tailwind';
-// @import 'top-bar-boxed';
+@import 'top-bar-boxed';
 // @import 'mobile-menu';
 // @import 'pagination';
-// @import 'dropdown';
+@import 'dropdown';
 // @import 'modal';
 // @import 'tab';
 @import 'checkbox';
@@ -75,9 +75,9 @@
 // @import 'slick';
 // @import 'jquery-validation';
 // @import 'slick';
-// @import 'search-result';
+@import 'search-result';
 // @import 'mini-report-chart';
-// @import 'notification-content';
+@import 'notification-content';
 // @import 'report-maps';
 // @import 'pos-dropdown';
 // @import 'pos';
