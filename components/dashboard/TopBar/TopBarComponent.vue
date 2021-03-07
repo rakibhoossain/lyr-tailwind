@@ -2,95 +2,10 @@
   <!-- BEGIN: Top Bar -->
   <div class="top-bar">
       <!-- BEGIN: Breadcrumb -->
-      <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <vue-feather type="chevron-right" class="breadcrumb__icon"></vue-feather> <a href="" class="breadcrumb--active">Dashboard</a> </div>
+      <breadcrumb-component/>
       <!-- END: Breadcrumb -->
       <!-- BEGIN: Search -->
-      <div class="intro-x relative mr-3 sm:mr-6">
-          <div class="search hidden sm:block">
-              <input type="text" class="search__input input placeholder-theme-13" placeholder="Search...">
-              <vue-feather class="search__icon" type="search"></vue-feather>
-          </div>
-          <a class="notification sm:hidden" href=""> <vue-feather class="notification__icon" type="search"></vue-feather> </a>
-          <div class="search-result">
-              <div class="search-result__content">
-                  <div class="search-result__content__title">Pages</div>
-                  <div class="mb-5">
-                      <a href="" class="flex items-center">
-                          <div class="w-8 h-8 bg-theme-18 text-theme-9 flex items-center justify-center rounded-full"> <vue-feather class="w-4 h-4" type="inbox"></vue-feather> </div>
-                          <div class="ml-3">Mail Settings</div>
-                      </a>
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 bg-theme-17 text-theme-11 flex items-center justify-center rounded-full"> <vue-feather class="w-4 h-4" type="users"></vue-feather> </div>
-                          <div class="ml-3">Users & Permissions</div>
-                      </a>
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 bg-theme-14 text-theme-10 flex items-center justify-center rounded-full"> <vue-feather class="w-4 h-4" type="credit-card"></vue-feather> </div>
-                          <div class="ml-3">Transactions Report</div>
-                      </a>
-                  </div>
-                  <div class="search-result__content__title">Users</div>
-                  <div class="mb-5">
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 image-fit">
-                              <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-12.jpg">
-                          </div>
-                          <div class="ml-3">Johnny Depp</div>
-                          <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com</div>
-                      </a>
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 image-fit">
-                              <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-4.jpg">
-                          </div>
-                          <div class="ml-3">Johnny Depp</div>
-                          <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com</div>
-                      </a>
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 image-fit">
-                              <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-8.jpg">
-                          </div>
-                          <div class="ml-3">Kate Winslet</div>
-                          <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">katewinslet@left4code.com</div>
-                      </a>
-                      <a href="" class="flex items-center mt-2">
-                          <div class="w-8 h-8 image-fit">
-                              <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-1.jpg">
-                          </div>
-                          <div class="ml-3">Brad Pitt</div>
-                          <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">bradpitt@left4code.com</div>
-                      </a>
-                  </div>
-                  <div class="search-result__content__title">Products</div>
-                  <a href="" class="flex items-center mt-2">
-                      <div class="w-8 h-8 image-fit">
-                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-1.jpg">
-                      </div>
-                      <div class="ml-3">Nike Air Max 270</div>
-                      <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Sport &amp; Outdoor</div>
-                  </a>
-                  <a href="" class="flex items-center mt-2">
-                      <div class="w-8 h-8 image-fit">
-                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-5.jpg">
-                      </div>
-                      <div class="ml-3">Nike Air Max 270</div>
-                      <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Sport &amp; Outdoor</div>
-                  </a>
-                  <a href="" class="flex items-center mt-2">
-                      <div class="w-8 h-8 image-fit">
-                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-6.jpg">
-                      </div>
-                      <div class="ml-3">Samsung Galaxy S20 Ultra</div>
-                      <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Smartphone &amp; Tablet</div>
-                  </a>
-                  <a href="" class="flex items-center mt-2">
-                      <div class="w-8 h-8 image-fit">
-                          <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-3.jpg">
-                      </div>
-                      <div class="ml-3">Apple MacBook Pro 13</div>
-                      <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">PC &amp; Laptop</div>
-                  </a>
-              </div>
-          </div>
-      </div>
+      <search-component/>
       <!-- END: Search -->
       <!-- BEGIN: Notifications -->
       <div class="intro-x dropdown relative mr-auto sm:mr-6">
@@ -195,7 +110,10 @@
   <!-- END: Top Bar -->
 </template>
 <script>
+import SearchComponent from '~/components/dashboard/TopBar/Components/SearchComponent.vue'
+import BreadcrumbComponent from '~/components/dashboard/TopBar/Components/BreadcrumbComponent.vue'
 export default {
-  name: "top-content",
+  components: { SearchComponent, BreadcrumbComponent },
+  name: "top-bar-component",
 }
 </script>

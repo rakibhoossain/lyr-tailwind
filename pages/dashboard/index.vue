@@ -5,18 +5,18 @@
         <!-- END: Side Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
-          <top-content/>
+          <top-bar-component/>
           <!-- <top-content/> -->
         </div>
         <!-- END: Content -->
     </div>
 </template>
 <script>
-import TopContent from '~/components/dashboard/TopContent.vue'
+import TopBarComponent from '~/components/dashboard/TopBar/TopBarComponent.vue'
 import SidebarMenu from '~/components/dashboard/SidebarMenu.vue'
 export default {
   components: {
-    TopContent,
+    TopBarComponent,
     SidebarMenu
   },
 }
