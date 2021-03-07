@@ -4,8 +4,6 @@ function sidebarFunction(){
     el.addEventListener('click', function(ev){
       ev.preventDefault()
 
-      console.log(ev, el)
-
       //menue item el
       let el_classList = el.classList
 
