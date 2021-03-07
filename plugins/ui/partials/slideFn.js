@@ -1,4 +1,4 @@
-global.slideUp = (target, duration=500) => {
+global.slideUp = (target, duration=500, callback = null) => {
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
   target.style.boxSizing = 'border-box';
@@ -20,10 +20,15 @@ global.slideUp = (target, duration=500) => {
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');
+
+    if (callback && (typeof callback === 'function')) {
+      callback();
+    }
+
   }, duration);
 }
 
-global.slideDown = (target, duration=500) => {
+global.slideDown = (target, duration=500, callback = null) => {
   target.style.removeProperty('display');
   let display = window.getComputedStyle(target).display;
 
@@ -52,12 +57,17 @@ global.slideDown = (target, duration=500) => {
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');
+
+    if (callback && (typeof callback === 'function')) {
+      callback();
+    }
+
   }, duration);
 }
-global.slideToggle = (target, duration = 500) => {
+global.slideToggle = (target, duration = 500, callback = null) => {
   if (window.getComputedStyle(target).display === 'none') {
-    return slideDown(target, duration);
+    return slideDown(target, duration, callback);
   } else {
-    return slideUp(target, duration);
+    return slideUp(target, duration, callback);
   }
 }

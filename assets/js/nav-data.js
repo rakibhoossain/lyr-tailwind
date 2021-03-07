@@ -69,8 +69,22 @@ const navData =
       {
         'icon': 'activity',
         'layout': 'side-menu',
-        'page_name': 'crud-data-list',
-        'title': 'Data List'
+        'page_name': '#',
+        'title': 'Data List',
+        'children': [
+          {
+            'icon': 'activity',
+            'layout': 'side-menu',
+            'page_name': 'crud-data-list',
+            'title': 'Data List'
+          },
+          {
+            'icon': 'activity',
+            'layout': 'side-menu',
+            'page_name': 'crud-form',
+            'title': 'Form'
+          }
+        ],
       },
       {
         'icon': 'activity',

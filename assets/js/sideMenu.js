@@ -25,8 +25,9 @@ function sidebarFunction(){
           }
 
           el_classList.remove('side-menu--open');
-          slideUp(ul_el)
-          ul_classList.remove('side-menu__sub-open');
+          slideUp(ul_el, 500, function() {
+            ul_classList.remove('side-menu__sub-open');
+          })
 
         }else{
 
@@ -36,8 +37,10 @@ function sidebarFunction(){
           }
 
           el_classList.add('side-menu--open');
-          slideDown(ul_el)
-          ul_classList.add('side-menu__sub-open');
+          slideDown(ul_el, function() {
+            ul_classList.add('side-menu__sub-open');
+          })
+
         }
       }
     })
