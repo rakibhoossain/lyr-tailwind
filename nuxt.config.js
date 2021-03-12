@@ -84,4 +84,8 @@ export default {
         },
     }
   },
+
+  router: {
+    linkExactActiveClass: 'side-menu--active'
+  },
 }
