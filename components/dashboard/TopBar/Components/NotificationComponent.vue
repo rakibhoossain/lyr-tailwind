@@ -1,6 +1,6 @@
 <template>
   <div class="intro-x dropdown relative mr-auto sm:mr-6">
-    <div class="dropdown-toggle notification notification--bullet cursor-pointer"> <vue-feather class="notification__icon" type="bell" @click="isShowNotification = !isShowNotification"></vue-feather> </div>
+    <div class="dropdown-toggle notification notification--bullet cursor-pointer focus:outline-none" @focusout="isShowNotification=false" tabindex="2"> <vue-feather class="notification__icon" type="bell" @click="isShowNotification = !isShowNotification"></vue-feather> </div>
     <div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0" :class="{'show': isShowNotification}">
         <div class="notification-content__box dropdown-box__content box">
             <div class="notification-content__title">Notifications</div>

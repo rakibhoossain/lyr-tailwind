@@ -1,5 +1,5 @@
 <template>
-  <div class="intro-x dropdown w-8 h-8 relative">
+  <div class="intro-x dropdown w-8 h-8 relative focus:outline-none" @focusout="isShowAccount=false" tabindex="1">
     <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" @click="isShowAccount = !isShowAccount">
         <img alt="User full name" src="~/assets/images/logo.svg">
     </div>
