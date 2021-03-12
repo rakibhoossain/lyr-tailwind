@@ -26,28 +26,28 @@
             <div class="mb-5">
                 <a href="" class="flex items-center mt-2">
                     <div class="w-8 h-8 image-fit">
-                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-12.jpg">
+                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                     </div>
                     <div class="ml-3">Johnny Depp</div>
                     <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com</div>
                 </a>
                 <a href="" class="flex items-center mt-2">
                     <div class="w-8 h-8 image-fit">
-                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-4.jpg">
+                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                     </div>
                     <div class="ml-3">Johnny Depp</div>
                     <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">johnnydepp@left4code.com</div>
                 </a>
                 <a href="" class="flex items-center mt-2">
                     <div class="w-8 h-8 image-fit">
-                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-8.jpg">
+                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                     </div>
                     <div class="ml-3">Kate Winslet</div>
                     <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">katewinslet@left4code.com</div>
                 </a>
                 <a href="" class="flex items-center mt-2">
                     <div class="w-8 h-8 image-fit">
-                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-1.jpg">
+                        <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                     </div>
                     <div class="ml-3">Brad Pitt</div>
                     <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">bradpitt@left4code.com</div>
@@ -56,28 +56,28 @@
             <div class="search-result__content__title">Products</div>
             <a href="" class="flex items-center mt-2">
                 <div class="w-8 h-8 image-fit">
-                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-1.jpg">
+                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                 </div>
                 <div class="ml-3">Nike Air Max 270</div>
                 <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Sport &amp; Outdoor</div>
             </a>
             <a href="" class="flex items-center mt-2">
                 <div class="w-8 h-8 image-fit">
-                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-5.jpg">
+                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                 </div>
                 <div class="ml-3">Nike Air Max 270</div>
                 <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Sport &amp; Outdoor</div>
             </a>
             <a href="" class="flex items-center mt-2">
                 <div class="w-8 h-8 image-fit">
-                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-6.jpg">
+                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                 </div>
                 <div class="ml-3">Samsung Galaxy S20 Ultra</div>
                 <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">Smartphone &amp; Tablet</div>
             </a>
             <a href="" class="flex items-center mt-2">
                 <div class="w-8 h-8 image-fit">
-                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-3.jpg">
+                    <img alt="Midone Tailwind HTML Admin Template" class="rounded-full" src="~/assets/images/logo.svg">
                 </div>
                 <div class="ml-3">Apple MacBook Pro 13</div>
                 <div class="ml-auto w-48 truncate text-gray-600 text-xs text-right">PC &amp; Laptop</div>
