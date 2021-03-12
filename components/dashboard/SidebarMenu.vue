@@ -12,7 +12,7 @@
 </template>
 <script>
 import navData from '../../assets/js/nav-data'
-import sidebarFunction from '../../assets/js/sideMenu'
+// import sidebarFunction from '../../assets/js/sideMenu'
 import MenuItem from '~/components/dashboard/partials/MenuItem.vue'
 export default {
   name: "sidebar-menu",
@@ -23,7 +23,7 @@ export default {
     return {navData}
   },
   mounted() {
-    sidebarFunction()
+    // sidebarFunction()
   },
 }
 </script>
