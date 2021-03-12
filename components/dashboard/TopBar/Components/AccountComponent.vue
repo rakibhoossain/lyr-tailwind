@@ -6,8 +6,8 @@
     <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20" :class="{'show' : isShowAccount}">
         <div class="dropdown-box__content box bg-theme-38 text-white">
             <div class="p-4 border-b border-theme-40">
-                <div class="font-medium">Johnny Depp</div>
-                <div class="text-xs text-theme-41">Backend Engineer</div>
+                <div class="font-medium">{{$auth.user.name}}</div>
+                <div class="text-xs text-theme-41">{{$auth.user.email}}</div>
             </div>
             <div class="p-2">
                 <a href="" class="flex items-center p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <vue-feather class="w-4 h-4 mr-2" type="user"></vue-feather> Profile </a>
