@@ -15,6 +15,7 @@
 import TopBarComponent from '~/components/dashboard/TopBar/TopBarComponent.vue'
 import SidebarMenu from '~/components/dashboard/SidebarMenu.vue'
 export default {
+  middleware: 'auth',
   components: {
     TopBarComponent,
     SidebarMenu
