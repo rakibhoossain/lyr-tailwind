@@ -32,10 +32,10 @@ const navData =
     ]
   },
   {
-    'icon': 'inbox',
+    'icon': 'shopping-bag',
     'layout': 'side-menu',
-    'page_name': 'inbox',
-    'title': 'Inbox'
+    'page_name': '/dashboard/products',
+    'title': 'Products'
   },
   {
     'icon': 'hard-drive',

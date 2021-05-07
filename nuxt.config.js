@@ -47,6 +47,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
+    '@nuxt/http',
   ],
 
   //Style resources https://www.npmjs.com/package/@nuxtjs/style-resources
@@ -65,7 +66,12 @@ export default {
 
   //Axios
   axios:{
-    // baseURL: BASE_URL+'/api',
+    baseURL: BASE_URL,
+  },
+
+  //http
+  http:{
+    baseURL: BASE_URL,
   },
 
   // Auth
